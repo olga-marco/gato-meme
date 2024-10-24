@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Moviéndose</title>
+
+    <style>
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background: #88be86;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 200px;
+        }
+
+        .gato {
+            position: absolute;
+            width: 200px;
+            animation: mover 6s linear infinite;
+        }
+
+        @keyframes mover {
+            0% {
+                left: -100px;
+            }
+            50% {
+                left: calc(100% - 100px);
+            }
+            100% {
+                left: -100px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="GATO%20NARANJA.jpg" alt="Gato" class="gato">
+</div>
+</body>
+</html>
